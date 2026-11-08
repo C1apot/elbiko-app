@@ -1,16 +1,16 @@
 {
-  "version": "2.8.2",
-  "notes": "### Settings → Notifications answers now\n\nThe panel used to sit on \"Checking…\" and the live focus notification never appeared. Both had the same cause: a call into Android that never came back, and no way for the app to notice. Every notification call now has a deadline and reports what happened, so the panel always ends somewhere — allowed, not allowed, or a named problem with Android's own message.\n\n- **Asked for on open.** Elbiko now asks for notification permission when it launches, not only from that panel, and a running session appears in your shade the moment it is granted.\n- **Open Android settings** from the panel. Android never asks twice, so a refusal can only be undone there — the panel re-reads the state when you come back.\n- Windows and Android share this release; the desktop side carries the same fix.",
-  "pub_date": "2026-11-08T15:32:29.358Z",
+  "version": "2.8.3",
+  "notes": "### The pop-out is a button now\n\nThe floating timer used to open itself on launch whenever it had been switched on once in Settings. It no longer does — **nothing opens it for you**.\n\n- There is a **Pop out** button on the Focus screen, right next to Start/Pause/Stop. Press it again to hide the window. The same switch still lives in Settings → Floating timer, and the two always agree: close the pop-out from its own header and the button updates too.\n- If Windows refuses to open the window, the reason is printed under the transport instead of leaving a button that lies.\n\nThis release also carries **2.8.2's notification fix** for Android — the panel that sat on \"Checking…\" and the live focus notification that never appeared.",
+  "pub_date": "2026-11-08T15:42:31.082Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjJEUURObU5lUjZKcE82eXlvOUUyNml0cTRzOEFyT1N0K2FrYzBFKy9RT0w3SjF1UU9oandZbW91NGQ4MHhNMVNwVGFMeHBBSmJ0Mk5FVk0xbEZTY3dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUxNjEwCWZpbGU6RWxiaWtvXzIuOC4yX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMgp2L0JzOUdzWDJ6dnBtU05uYkp5RlhERUgrQjlQUmE3eHFEcmxFNk5DalNDdXlidm9VWmtKWSttZ0cybFlMS3RKK3pKSlVvUkt3dlM0TVpIMUp4cXFCUT09Cg==",
-      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.2/Elbiko_2.8.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjI4MTh0S3AzSFZweFBVVVdJbnAwa2poVm9mUDF3TmJxRWFZeEs3bDBEeWdpcnBwUFBsL1VySXUwZ1BJWmg0L0RQL24wcEtWcFRQRllWWUhqZ09CbndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUyMTU1CWZpbGU6RWxiaWtvXzIuOC4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMwpnQzJKZzNmdVhlNGhjRjN2TTVRRmMzbDhDODZjcjBjR0VXZ2hOVS9Qbmlwa2VTZjIrbHNZanlHQldITmQ0Y3JhSHMyZkFYU2k1Wjd2M0pmNDM3aTNEQT09Cg==",
+      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.3/Elbiko_2.8.3_x64-setup.exe"
     }
   },
   "android": {
-    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.2/Elbiko_Android.apk"
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.3/Elbiko_Android.apk"
   },
-  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.2/Elbiko_Setup.exe",
-  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.2"
+  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.3/Elbiko_Setup.exe",
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.3"
 }
