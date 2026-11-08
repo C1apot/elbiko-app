@@ -1,16 +1,16 @@
 {
-  "version": "2.8.0",
-  "notes": "## The floating timer, the update reminder, and the notification — all had the same problem\n\nEach of these was shipped, each had a switch, and none of them ever appeared. The\ncause was the same in three different places: **something failed and the failure\nwas swallowed.**\n\n- **Floating timer (Windows)** now opens. The window was there all along; the app\n  was not allowed to show it, because the permission list was missing the window\n  calls. Fixed, and the Settings switch now says why if it ever can't.\n- **Update reminder** now appears on every launch, not only when the last check\n  was six hours old. The last \"update available\" answer is remembered, so the\n  strip is already on screen while the app asks again. And a failed install no\n  longer hides the reminder — that is what made it vanish for a version that\n  never actually installed.\n- **Android notification** now asks for permission when you open the app, instead\n  of only when a session starts (where the first notification was lost behind\n  the dialog). New: **Settings → Notifications** on mobile shows whether it is\n  allowed, with a button to enable it.\n\n## What to check\n\n1. **Windows**: Settings → Floating timer → on. A small stopwatch window appears;\n   drag it anywhere, pin it on top, expand to the app.\n2. **Android**: Settings → Notifications → Enable. Start a session: the live\n   timer appears in the shade with Pause and Stop.\n3. **Both**: reopen the app — if a newer release exists, the strip at the top of\n   every screen says so.",
-  "pub_date": "2026-11-08T14:45:31.304Z",
+  "version": "2.8.1",
+  "notes": "## The install now has to prove it happened — and there is always a way through\n\nLast build told you *where* it failed; this one stops at nothing but the truth:\nafter asking Android to install, the app waits for its own window to disappear.\nAndroid's package installer is a different screen, so if Elbiko is still in front\nof you, that install did not start — and the app opens the download page instead\nof pretending.\n\n**You no longer depend on the in-app installer at all.** The update dialog now has\n**Open download page** next to Cancel: one tap opens the release page in your\nbrowser, where the APK downloads and Android's usual install prompt appears.\n\n## Also fixed\n\n- Android's `versionCode` was hard-coded to `1` for every release, so every build\n  looked like the same version to Android's package manager. It now follows the\n  version (`2.8.1` → `20801`), which is what makes an upgrade an upgrade.\n- The same is true on Windows and everywhere else: one code path decides how a\n  URL leaves the app (Tauri opener, Android Custom Tab, browser tab).\n\n## To get this one\n\nTap **Install update**; if Android still doesn't take over, tap **Open download\npage** and install the APK from the browser — that route is guaranteed.",
+  "pub_date": "2026-11-08T15:09:28.220Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjdkWjk4d3lqbmlnaVp3aDFJeTBnNVllbmdHSlJtOTJDSTViaW04dzE2QmlVZjU5UHk3UVJvN2VWVWZFOUgrNzZPQ3ZqbEtUR1N4eWtobHUrV1lMS1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTQ4OTM3CWZpbGU6RWxiaWtvXzIuOC4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMApDcGZwdEt6RFNtL1ArSjVVN1NDby9VOXBVSGFPNjlENm9UclBxVE5TNUdORlZtcEdSSUI0R2lVbnRrbkp4RC9KZjg3cEFlY0NPUzRLS1djcW5idWhCZz09Cg==",
-      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.0/Elbiko_2.8.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjM1NEV4SVNBcks5MGVhaVYzZ3h4ZzJDb2hZWGgxN29TcU1zckpRR1hvaXpkUmtnTUdzZks5R0I1RjZ1ODVIU2pTR3M1Q2V5RXk0N0Nkd2kyYVZmdUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUwMTM3CWZpbGU6RWxiaWtvXzIuOC4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMQo1NGJFVFR3eTlvdW1VTVpqVWZrLzN0Q0RIaDlZYnRGQlptM01HSjFlVUk4cUswSFhOcTlkRlZFTUVHSytoem9TcTBrQk1rZmcyM0E4SmlrNkxpN2tBZz09Cg==",
+      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.1/Elbiko_2.8.1_x64-setup.exe"
     }
   },
   "android": {
-    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.0/Elbiko_Android.apk"
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.1/Elbiko_Android.apk"
   },
-  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.0/Elbiko_Setup.exe",
-  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.0"
+  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.1/Elbiko_Setup.exe",
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.1"
 }
