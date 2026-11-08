@@ -1,16 +1,16 @@
 {
-  "version": "2.8.1",
-  "notes": "## The install now has to prove it happened — and there is always a way through\n\nLast build told you *where* it failed; this one stops at nothing but the truth:\nafter asking Android to install, the app waits for its own window to disappear.\nAndroid's package installer is a different screen, so if Elbiko is still in front\nof you, that install did not start — and the app opens the download page instead\nof pretending.\n\n**You no longer depend on the in-app installer at all.** The update dialog now has\n**Open download page** next to Cancel: one tap opens the release page in your\nbrowser, where the APK downloads and Android's usual install prompt appears.\n\n## Also fixed\n\n- Android's `versionCode` was hard-coded to `1` for every release, so every build\n  looked like the same version to Android's package manager. It now follows the\n  version (`2.8.1` → `20801`), which is what makes an upgrade an upgrade.\n- The same is true on Windows and everywhere else: one code path decides how a\n  URL leaves the app (Tauri opener, Android Custom Tab, browser tab).\n\n## To get this one\n\nTap **Install update**; if Android still doesn't take over, tap **Open download\npage** and install the APK from the browser — that route is guaranteed.",
-  "pub_date": "2026-11-08T15:09:28.220Z",
+  "version": "2.8.2",
+  "notes": "### Settings → Notifications answers now\n\nThe panel used to sit on \"Checking…\" and the live focus notification never appeared. Both had the same cause: a call into Android that never came back, and no way for the app to notice. Every notification call now has a deadline and reports what happened, so the panel always ends somewhere — allowed, not allowed, or a named problem with Android's own message.\n\n- **Asked for on open.** Elbiko now asks for notification permission when it launches, not only from that panel, and a running session appears in your shade the moment it is granted.\n- **Open Android settings** from the panel. Android never asks twice, so a refusal can only be undone there — the panel re-reads the state when you come back.\n- Windows and Android share this release; the desktop side carries the same fix.",
+  "pub_date": "2026-11-08T15:32:29.358Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjM1NEV4SVNBcks5MGVhaVYzZ3h4ZzJDb2hZWGgxN29TcU1zckpRR1hvaXpkUmtnTUdzZks5R0I1RjZ1ODVIU2pTR3M1Q2V5RXk0N0Nkd2kyYVZmdUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUwMTM3CWZpbGU6RWxiaWtvXzIuOC4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMQo1NGJFVFR3eTlvdW1VTVpqVWZrLzN0Q0RIaDlZYnRGQlptM01HSjFlVUk4cUswSFhOcTlkRlZFTUVHSytoem9TcTBrQk1rZmcyM0E4SmlrNkxpN2tBZz09Cg==",
-      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.1/Elbiko_2.8.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjJEUURObU5lUjZKcE82eXlvOUUyNml0cTRzOEFyT1N0K2FrYzBFKy9RT0w3SjF1UU9oandZbW91NGQ4MHhNMVNwVGFMeHBBSmJ0Mk5FVk0xbEZTY3dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUxNjEwCWZpbGU6RWxiaWtvXzIuOC4yX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMgp2L0JzOUdzWDJ6dnBtU05uYkp5RlhERUgrQjlQUmE3eHFEcmxFNk5DalNDdXlidm9VWmtKWSttZ0cybFlMS3RKK3pKSlVvUkt3dlM0TVpIMUp4cXFCUT09Cg==",
+      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.2/Elbiko_2.8.2_x64-setup.exe"
     }
   },
   "android": {
-    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.1/Elbiko_Android.apk"
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.2/Elbiko_Android.apk"
   },
-  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.1/Elbiko_Setup.exe",
-  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.1"
+  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.2/Elbiko_Setup.exe",
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.2"
 }
