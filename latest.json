@@ -1,0 +1,16 @@
+{
+  "version": "2.7.3",
+  "notes": "## The update got a real error message, and a way out of it\n\n**Fixed: tapping \"Install update\" did nothing.** The app caught every failure from\nthe Android installer and reported success, so the dialog closed and the app\nstayed on the old version. It now:\n\n- keeps the dialog open and tells you **what actually failed** — the file, the\n  share permission, or the installer itself;\n- opens your **browser** on the download page when the in-app installer can't be\n  used, instead of quietly doing nothing (the old fallback called a function a\n  web view doesn't have).\n\n**Fixed: \"Could not reach the release feed — HTTP 504\".** The feed URL was an\nalias that redirects, and GitHub's edge was timing out on it. The app now reads\nthe file directly from the repository (no redirect) and only falls back to the\nalias.\n\n## One manual install this time\n\nYour phone is on 2.7.0, whose install button is the broken one, so it can't fetch\nthis build by itself:\n\n**[Elbiko_Android.apk](https://github.com/C1apot/elbiko-app/releases/latest/download/Elbiko_Android.apk)** —\ninstall it once. From 2.7.3 onward, updates come from inside the app, and if one\never fails again it will say why and hand you the download page.",
+  "pub_date": "2026-11-08T14:14:01.271Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjZyZktTR3JvQnhhWnd1cWY3VGxvWk12aGltM3pqYXdEajB2TnNmUWNvMFZaQm8yQ2ExL1FDL0YzSE1qRGpFaDJYdXBaMDVCWWkreUlhUGQ2cy9vNUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTQ2OTMxCWZpbGU6RWxiaWtvXzIuNy4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjcuMwoybWp1a2ZhLzZnWUJTdG9YMWFUZ2I4OHUwV3JqMnB1cjQzR0RxTlNrNHV0dU40U3NOMjhsKzl6SkhwaWFnTUhybWNuMUlaVkpwZnpDWmxENmlJVUxBZz09Cg==",
+      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.7.3/Elbiko_2.7.3_x64-setup.exe"
+    }
+  },
+  "android": {
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.7.3/Elbiko_Android.apk"
+  },
+  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.7.3/Elbiko_Setup.exe",
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.7.3"
+}
