@@ -1,16 +1,16 @@
 {
-  "version": "2.7.4",
-  "notes": "## Read this first: one manual reinstall, and **export your data before it**\n\nTwo builds I shipped could never install over each other. GitHub's build machine\ncreates a throwaway signing key for every run, so every APK had a **different\nidentity** — and Android refuses to install an update whose signature doesn't\nmatch the installed app. That is why the install crashed instead of updating.\n\nFrom 2.7.4 onward **one permanent key** signs every build (certificate\n`CN=Elbiko`, SHA-256 `f45d1b03…24bd9c8`), so updates install over each other the\nway they should. But this first one cannot install over what you have, because\nyour current APK was signed with a key that no longer exists anywhere.\n\n**Do it in this order — the middle step erases the app's storage:**\n\n1. **Settings → Export all** and keep the JSON file somewhere safe (Downloads).\n2. **Uninstall Elbiko.**\n3. Install **Elbiko_Android.apk** from this release.\n4. Open Elbiko → **Settings → Import** → choose the file → *Replace all*.\n\nYour days, sessions, streak, syllabus and notes all come back from that file.\nAfter this, in-app updates work, and this is the last manual reinstall.\n\n## Also in this build\n\n- The update dialog tells you what failed instead of closing silently.\n- The update feed reads from a direct file host first, so the \"HTTP 504\" check\n  failure can't block you.",
-  "pub_date": "2026-11-08T14:25:03.880Z",
+  "version": "2.8.0",
+  "notes": "## The floating timer, the update reminder, and the notification — all had the same problem\n\nEach of these was shipped, each had a switch, and none of them ever appeared. The\ncause was the same in three different places: **something failed and the failure\nwas swallowed.**\n\n- **Floating timer (Windows)** now opens. The window was there all along; the app\n  was not allowed to show it, because the permission list was missing the window\n  calls. Fixed, and the Settings switch now says why if it ever can't.\n- **Update reminder** now appears on every launch, not only when the last check\n  was six hours old. The last \"update available\" answer is remembered, so the\n  strip is already on screen while the app asks again. And a failed install no\n  longer hides the reminder — that is what made it vanish for a version that\n  never actually installed.\n- **Android notification** now asks for permission when you open the app, instead\n  of only when a session starts (where the first notification was lost behind\n  the dialog). New: **Settings → Notifications** on mobile shows whether it is\n  allowed, with a button to enable it.\n\n## What to check\n\n1. **Windows**: Settings → Floating timer → on. A small stopwatch window appears;\n   drag it anywhere, pin it on top, expand to the app.\n2. **Android**: Settings → Notifications → Enable. Start a session: the live\n   timer appears in the shade with Pause and Stop.\n3. **Both**: reopen the app — if a newer release exists, the strip at the top of\n   every screen says so.",
+  "pub_date": "2026-11-08T14:45:31.304Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjlteWVVdVppVi91RkVKZ0JDRkszelZFTjgzeW9NQ3JzUDZqYXd4N2ZleU92WlpVWXVhcnZkM2hIa081d1VzWkI5d3lneFRLcVVrM0VCa0NaN3ZpK2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTQ3NTY1CWZpbGU6RWxiaWtvXzIuNy40X3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjcuNApTaXBYdFZVeEpIZS9Ld3VacjFrejFKL01HcE1qaDVxWSt4VEw2RHlPa3FXME8vY0JCMkRJbFVOckxVb1p1MkFFVlFwai9sMFovVEJGWDhJOUI4WUNEdz09Cg==",
-      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.7.4/Elbiko_2.7.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjdkWjk4d3lqbmlnaVp3aDFJeTBnNVllbmdHSlJtOTJDSTViaW04dzE2QmlVZjU5UHk3UVJvN2VWVWZFOUgrNzZPQ3ZqbEtUR1N4eWtobHUrV1lMS1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTQ4OTM3CWZpbGU6RWxiaWtvXzIuOC4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMApDcGZwdEt6RFNtL1ArSjVVN1NDby9VOXBVSGFPNjlENm9UclBxVE5TNUdORlZtcEdSSUI0R2lVbnRrbkp4RC9KZjg3cEFlY0NPUzRLS1djcW5idWhCZz09Cg==",
+      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.0/Elbiko_2.8.0_x64-setup.exe"
     }
   },
   "android": {
-    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.7.4/Elbiko_Android.apk"
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.0/Elbiko_Android.apk"
   },
-  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.7.4/Elbiko_Setup.exe",
-  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.7.4"
+  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.0/Elbiko_Setup.exe",
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.0"
 }
