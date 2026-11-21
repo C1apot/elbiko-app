@@ -1,16 +1,16 @@
 {
-  "version": "3.0.0",
-  "notes": "### A new Elbiko: quieter, darker, faster to read\n\nThis is the largest visual change the app has had. Same features, same data, same everything underneath — a completely new surface.\n\n**True OLED black.** Pure `#000` page, three subtle grey layers instead of glass, blur and gradients. The colour now appears only where it means something: a primary button, a progress bar, a switch that's on, the current period in a chart, your goal check. The rest is neutral, which makes the colour read as a signal instead of decoration.\n\n**A calmer sidebar.** One flat list instead of groups, the Elbiko name sits at the top like a masthead, and the whole thing collapses to a narrow icon rail (hover an icon for its name). Elbiko remembers which you prefer.\n\n**A real mobile layout.** A slim top bar opens the same navigation as a drawer, with full-width rows sized for a thumb. No shrunken desktop.\n\n**Calendar, honestly.** Days are drawn by brightness, not colour, and a day with no work draws nothing at all — so a month shows what actually happened.\n\n**Quote of the day**, now labelled, and thirteen new quotes on work ethic, potential and belief — Marcus Aurelius, Seneca, Epictetus, Chuck Close, Will Durant, Carol Dweck, Marianne Williamson, Audre Lorde and Van Gogh.\n\nNothing you've recorded changes. Your sessions, streaks, syllabus, journal and settings arrive exactly as they are.",
-  "pub_date": "2026-11-21T01:33:23.477Z",
+  "version": "3.0.1",
+  "notes": "### The stray bar in the corner is gone\n\nWindows only, non-maximized: a thin vertical bar used to appear at the very top-left of the window, over the sidebar. That was Elbiko drawing its own scroll bar — a leftover from the old design that never had a position set, so it landed in the corner. It has been removed; scrolling uses the normal Windows scroll bar, which also works when the window is maximized.\n\nEverything else in 3.0.0 is unchanged: your data, settings and the new look all stay exactly as they are.",
+  "pub_date": "2026-11-21T01:49:35.515Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjh0TmdvcEVtVmJTRFJyeDRCcGxYUGh5cTN1VzFVdVpRTEpsUk55MkNVUElxWmlKVXEzN2VDSU1lYStxNlFFOXFweEVXNlVCWU04ZHJzbEFjeFVCR1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIzNTM4CWZpbGU6RWxiaWtvXzMuMC4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjozLjAuMApidVB6S2lFTGhkTkd0ZmEwZUNrUUxNeGxtdnF2dzlVTTJLUHpsK0ZVTHphVFhsOFhsTDBzUkxwd1pVRVk0VkxpTTd4SDlwa0RERVJNSFFqUUNlV2REUT09Cg==",
-      "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.0/Elbiko_3.0.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjZoMGFGakEzeTBiTGdmTFp3VjRqWDVJS0NjUVJ6ZXIzbjc1YUFQTEFQb3hldGFDWkdKM2NzejNmOEdGOEJPSXRWY25vMmVxclhyRENqQkxEaDAzZWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjI1MTA0CWZpbGU6RWxiaWtvXzMuMC4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjozLjAuMQp2QTZKTFVxUTkvSHZwaWJPa3M3YnYrZW5qajdOWmJIb0dGSXI1WU5YTHF6WmFtSGxEWmg1ZFF1dXZZUjNJT1JEUVFsMk5JTzRmK2cvbzVJUTJuNXBDdz09Cg==",
+      "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.1/Elbiko_3.0.1_x64-setup.exe"
     }
   },
   "android": {
-    "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.0/Elbiko_Android.apk"
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.1/Elbiko_Android.apk"
   },
-  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.0/Elbiko_Setup.exe",
-  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v3.0.0"
+  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.1/Elbiko_Setup.exe",
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v3.0.1"
 }
