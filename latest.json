@@ -1,7 +1,7 @@
 {
   "version": "3.0.1",
   "notes": "### The stray bar in the corner is gone\n\nWindows only, non-maximized: a thin vertical bar used to appear at the very top-left of the window, over the sidebar. That was Elbiko drawing its own scroll bar — a leftover from the old design that never had a position set, so it landed in the corner. It has been removed; scrolling uses the normal Windows scroll bar, which also works when the window is maximized.\n\nEverything else in 3.0.0 is unchanged: your data, settings and the new look all stay exactly as they are.",
-  "pub_date": "2026-11-21T01:49:35.515Z",
+  "pub_date": "2026-11-21T12:44:54.114Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjZoMGFGakEzeTBiTGdmTFp3VjRqWDVJS0NjUVJ6ZXIzbjc1YUFQTEFQb3hldGFDWkdKM2NzejNmOEdGOEJPSXRWY25vMmVxclhyRENqQkxEaDAzZWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjI1MTA0CWZpbGU6RWxiaWtvXzMuMC4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjozLjAuMQp2QTZKTFVxUTkvSHZwaWJPa3M3YnYrZW5qajdOWmJIb0dGSXI1WU5YTHF6WmFtSGxEWmg1ZFF1dXZZUjNJT1JEUVFsMk5JTzRmK2cvbzVJUTJuNXBDdz09Cg==",
