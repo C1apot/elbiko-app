@@ -1,8 +1,8 @@
 {
   "version": "3.0.1",
-  "androidVersion": "3.0.2",
-  "notes": "### Android fixes: the update installs, swipe everywhere, notifications\n\n**Updates install properly now.** Elbiko was declaring the wrong thing to Android and then distrusting the result: the app never asked for the install permission the system requires, and after handing the APK over it waited three seconds to see whether the installer had appeared — a guess that almost always failed, so every update was declared broken and dumped into the browser. Now the download runs, Android's installer opens, and you tap **Update**. No browser detour.\n\n**Swipe across the whole app.** It used to stop at the calendar. Swiping now moves through every section in the same order as the navigation — Dashboard, Focus, Tasks, Habits, Journal, Calendar, Syllabus, Test analysis, Sound, Share, Career, Settings.\n\n**Notifications panel fixed.** It was timing out while loading the bridge instead of talking to Android. That lookup is now immediate, so the panel reports the real permission state instead of \"the notification service did not answer\".\n\nThis is an **Android-only release**: same Windows build as 3.0.1, no new installer.",
-  "pub_date": "2026-11-21T13:05:15.179Z",
+  "androidVersion": "3.0.3",
+  "notes": "### A new way to move around, and the new logo\n\n**The floating menu.** The top bar is gone. A round button now hovers over the page and opens the navigation, so your screen keeps its full height.\n\n**Bigger, easier targets.** The navigation is a full-size list now — taller rows, larger icons and text — so a page can be opened with one thumb without aiming.\n\n**Elbiko writes its name once.** Inside the app you now see just the wordmark, at the top of the sidebar, the way ChatGPT titles its own sidebar. The logo itself lives on your home screen.\n\n**The new logo** — the ring, the arrow, the check and the hourglass — is now the app icon.\n\n**Everything from the dashboard.** The quick links at the bottom of the Dashboard used to be five sections; now every section is there, in navigation order, with Focus kept as the main button.",
+  "pub_date": "2026-11-21T13:51:18.174Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjZoMGFGakEzeTBiTGdmTFp3VjRqWDVJS0NjUVJ6ZXIzbjc1YUFQTEFQb3hldGFDWkdKM2NzejNmOEdGOEJPSXRWY25vMmVxclhyRENqQkxEaDAzZWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjI1MTA0CWZpbGU6RWxiaWtvXzMuMC4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjozLjAuMQp2QTZKTFVxUTkvSHZwaWJPa3M3YnYrZW5qajdOWmJIb0dGSXI1WU5YTHF6WmFtSGxEWmg1ZFF1dXZZUjNJT1JEUVFsMk5JTzRmK2cvbzVJUTJuNXBDdz09Cg==",
@@ -10,8 +10,8 @@
     }
   },
   "android": {
-    "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.2/Elbiko_Android.apk"
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.3/Elbiko_Android.apk"
   },
   "setup": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.1/Elbiko_Setup.exe",
-  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v3.0.2"
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v3.0.3"
 }
