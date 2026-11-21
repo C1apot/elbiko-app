@@ -1,16 +1,16 @@
 {
-  "version": "2.8.3",
-  "notes": "### The pop-out is a button now\n\nThe floating timer used to open itself on launch whenever it had been switched on once in Settings. It no longer does — **nothing opens it for you**.\n\n- There is a **Pop out** button on the Focus screen, right next to Start/Pause/Stop. Press it again to hide the window. The same switch still lives in Settings → Floating timer, and the two always agree: close the pop-out from its own header and the button updates too.\n- If Windows refuses to open the window, the reason is printed under the transport instead of leaving a button that lies.\n\nThis release also carries **2.8.2's notification fix** for Android — the panel that sat on \"Checking…\" and the live focus notification that never appeared.",
-  "pub_date": "2026-11-08T15:42:31.082Z",
+  "version": "3.0.0",
+  "notes": "### A new Elbiko: quieter, darker, faster to read\n\nThis is the largest visual change the app has had. Same features, same data, same everything underneath — a completely new surface.\n\n**True OLED black.** Pure `#000` page, three subtle grey layers instead of glass, blur and gradients. The colour now appears only where it means something: a primary button, a progress bar, a switch that's on, the current period in a chart, your goal check. The rest is neutral, which makes the colour read as a signal instead of decoration.\n\n**A calmer sidebar.** One flat list instead of groups, the Elbiko name sits at the top like a masthead, and the whole thing collapses to a narrow icon rail (hover an icon for its name). Elbiko remembers which you prefer.\n\n**A real mobile layout.** A slim top bar opens the same navigation as a drawer, with full-width rows sized for a thumb. No shrunken desktop.\n\n**Calendar, honestly.** Days are drawn by brightness, not colour, and a day with no work draws nothing at all — so a month shows what actually happened.\n\n**Quote of the day**, now labelled, and thirteen new quotes on work ethic, potential and belief — Marcus Aurelius, Seneca, Epictetus, Chuck Close, Will Durant, Carol Dweck, Marianne Williamson, Audre Lorde and Van Gogh.\n\nNothing you've recorded changes. Your sessions, streaks, syllabus, journal and settings arrive exactly as they are.",
+  "pub_date": "2026-11-21T01:33:23.477Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjI4MTh0S3AzSFZweFBVVVdJbnAwa2poVm9mUDF3TmJxRWFZeEs3bDBEeWdpcnBwUFBsL1VySXUwZ1BJWmg0L0RQL24wcEtWcFRQRllWWUhqZ09CbndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MTUyMTU1CWZpbGU6RWxiaWtvXzIuOC4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoyLjguMwpnQzJKZzNmdVhlNGhjRjN2TTVRRmMzbDhDODZjcjBjR0VXZ2hOVS9Qbmlwa2VTZjIrbHNZanlHQldITmQ0Y3JhSHMyZkFYU2k1Wjd2M0pmNDM3aTNEQT09Cg==",
-      "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.3/Elbiko_2.8.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVURGJvNXMrZTUwRjh0TmdvcEVtVmJTRFJyeDRCcGxYUGh5cTN1VzFVdVpRTEpsUk55MkNVUElxWmlKVXEzN2VDSU1lYStxNlFFOXFweEVXNlVCWU04ZHJzbEFjeFVCR1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIzNTM4CWZpbGU6RWxiaWtvXzMuMC4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjozLjAuMApidVB6S2lFTGhkTkd0ZmEwZUNrUUxNeGxtdnF2dzlVTTJLUHpsK0ZVTHphVFhsOFhsTDBzUkxwd1pVRVk0VkxpTTd4SDlwa0RERVJNSFFqUUNlV2REUT09Cg==",
+      "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.0/Elbiko_3.0.0_x64-setup.exe"
     }
   },
   "android": {
-    "url": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.3/Elbiko_Android.apk"
+    "url": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.0/Elbiko_Android.apk"
   },
-  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v2.8.3/Elbiko_Setup.exe",
-  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v2.8.3"
+  "setup": "https://github.com/C1apot/elbiko-app/releases/download/v3.0.0/Elbiko_Setup.exe",
+  "page": "https://github.com/C1apot/elbiko-app/releases/tag/v3.0.0"
 }
